@@ -1,12 +1,14 @@
 Source: mkos-overo
-Section: unknown
+Section: devel
 Priority: extra
-Maintainer: Bill Gatliff <bgat@ptuxvm.billgatliff.com>
-Build-Depends: debhelper (>= 8.0.0)
-Standards-Version: 3.9.3
+Maintainer: Bill Gatliff <bgat@billgatliff.com>
+Build-Depends: debhelper (>= 7.0.50~)
+Standards-Version: 3.9.4
+Vcs-Git: https://github.com/bgat/mkos-overo.git
+Vcs-Browser: https://github.com/bgat/mkos-overo.git
 
 Package: mkos-overo
 Architecture: all
-Depends: ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Depends: multistrap, util-linux, guestfish, bc, ${misc:Depends}
+Description: Compose filesystem images for Gumstix Overo
+ Compose a filesystem image for the Gumstix Overo target
